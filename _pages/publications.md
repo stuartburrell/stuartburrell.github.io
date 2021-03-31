@@ -4,6 +4,8 @@ permalink: /publications/
 author_profile: true
 ---
 
+Up to date versions of these articles are freely available on arXiv - see the links below.
+
 ### Research Articles
 
 6. The fractal structure of elliptical polynomial spirals, [arXiv](https://arxiv.org/abs/2008.08539)  
