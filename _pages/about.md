@@ -109,7 +109,7 @@ I enjoy teaching and was recently made an [Associate Fellow of the Higher Educat
 
 /* Fix the circle for containers on the right side */
 .timeline .right::after {
-  left: -16px;
+  left: 0px;
 }
 
 /* The actual content */
