@@ -46,7 +46,7 @@
 }
 
 .timeline-md tbody tr td:first-child{
-  border-style: hidden;
+  border-style: hidden !important;
   font-size:12px;
   margin-bottom:12px;
   position:relative;
