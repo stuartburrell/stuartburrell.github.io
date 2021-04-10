@@ -54,7 +54,6 @@
 }
 
 .timeline-md tbody tr td:first-child:before{
-  border: none !important;
   content:'';
   position:absolute;
   width:8px;
@@ -69,11 +68,10 @@
 }
 
 .timeline-md tbody tr td:first-child.big:before{
-  border: none !important;
   width:24px;
   height:24px;
   transform:translate(8px, -50%);
-  background-color:#fdfdfd
+  background-color:white
 }
 
 .timeline-md tbody tr td{
