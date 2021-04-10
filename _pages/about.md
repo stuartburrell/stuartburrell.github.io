@@ -18,6 +18,7 @@ I enjoy teaching and was recently made an [Associate Fellow of the Higher Educat
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
+<link href='./about.css' rel='stylesheet' type='text/css'>
 
 
 <!-- The Timeline -->
