@@ -35,7 +35,7 @@
 
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
-
+@import "timeline";
 
 
 
@@ -49,5 +49,3 @@ $timeline-big-event-background-color: $timeline-event-background-color;
 
 $timeline-entry-title-color: $grey-color-dark;
 $timeline-entry-body-color: $grey-color;
-
-@import "timeline";
