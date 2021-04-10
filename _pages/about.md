@@ -16,49 +16,161 @@ Before that, I completed a PhD in mathematics with the [analysis research group]
 
 I enjoy teaching and was recently made an [Associate Fellow of the Higher Education Academy (AFHEA)](https://stuartburrell.github.io/files/cert-afhea.pdf). In 2020, three students kindly nominated me for the 'Best Postgraduate Tutor' university teaching award.  
 
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<link href='about.css' rel='stylesheet' type='text/css'>
+/* Set a background color */
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+</style>
+</head>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
 
 
-<!-- The Timeline -->
-
-<ul class="timeline">
-
-	<!-- Item 1 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Freelancer</span>
-				<span class="time-wrapper"><span class="time">2013 - present</span></span>
-			</div>
-			<div class="desc">My current employment. !</div>
-		</div>
-	</li>
-
-	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">Test</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc">Test</div>
-		</div>
-	</li>
-
-	<!-- Item 3 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Test University</span>
-				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-			</div>
-			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-		</div>
-	</li>
-
-</ul>
 
 
 ## Contact details
