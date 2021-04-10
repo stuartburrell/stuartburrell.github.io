@@ -31,7 +31,6 @@
 }
 
 .timeline-md tbody tr{
-  border: none !important;
   width:calc(50% - 80px);
   float:left;padding:20px;
   clear:both;
@@ -72,28 +71,23 @@
 }
 
 .timeline-md tbody tr td{
-  border: none !important;
   color:#828282;
   display:block
 }
 
 .timeline-md tbody tr td p{
-  border: none !important;
   line-height:1.4em
 }
 
 .timeline-md tbody tr:nth-child(2n){
-  border: none !important;
   text-align:left;
   float:right
 }
 
 .timeline-md tbody tr:nth-child(2n) td:first-child:before{
-  border: none !important;
   left:-63px
 }
 
 .timeline-md tbody tr:nth-child(2n) td:first-child.big:before{
-  border: none !important;
   transform:translate(-8px, -50%)
 }
