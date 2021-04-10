@@ -18,8 +18,8 @@ I enjoy teaching and was recently made an [Associate Fellow of the Higher Educat
 
 ## Timeline
 
-| 11,988 |  test Hari Seldon and Cleon I are born on Helicon and Trantor, respectively. |
-| 12,020 | Hari Seldon arrives on Trantor to deliver his paper outlining his theory of psychohistory, a method of predicting the future along mass social change in humanity. (Events of Prelude to Foundation) |
+| 2021 - 2022 | TBD |
+| 2020 - 2021 | London Mathematical Society Early Career Research Fellow|
 | 2016 - 2020 | University of St Andrews, PhD, Mathematics |
 | 2012 - 2016 | Univeristy of St Andrews, MMath, Mathematics |
 {: .timeline-md}
