@@ -35,4 +35,19 @@
 
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
-@import "print";
+
+
+
+
+$timeline-background-color: $background-color;
+$timeline-rule-color: $grey-color;
+$timeline-font-family: $base-font-family;
+
+$timeline-event-background-color: $timeline-background-color;
+$timeline-event-border-color: $grey-color-dark;
+$timeline-big-event-background-color: $timeline-event-background-color;
+
+$timeline-entry-title-color: $grey-color-dark;
+$timeline-entry-body-color: $grey-color;
+
+@import "timeline";
