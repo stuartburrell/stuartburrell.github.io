@@ -12,14 +12,14 @@
 
 $timeline-background-color: black;
 $timeline-rule-color: grey;
-$timeline-font-family: $base-font-family;
+$timeline-font-family: helvetica;
 
-$timeline-event-background-color: $timeline-background-color;
-$timeline-event-border-color: $grey-color-dark;
-$timeline-big-event-background-color: $timeline-event-background-color;
+$timeline-event-background-color: white;
+$timeline-event-border-color: black;
+$timeline-big-event-background-color: white;
 
-$timeline-entry-title-color: $grey-color-dark;
-$timeline-entry-body-color: $grey-color;
+$timeline-entry-title-color: black;
+$timeline-entry-body-color: black;
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
