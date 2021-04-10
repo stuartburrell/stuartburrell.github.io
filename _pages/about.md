@@ -18,12 +18,12 @@ I enjoy teaching and was recently made an [Associate Fellow of the Higher Educat
 
 <head>
 <style>
-* {
+.timeline * {
   box-sizing: border-box;
 }
 
 /* Set a background color */
-body {
+.timeline body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 /* Container around content */
-.container {
+.timeline .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -56,7 +56,7 @@ body {
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline .container::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -70,17 +70,17 @@ body {
 }
 
 /* Place the container to the left */
-.left {
+.timeline .left {
   left: 0;
 }
 
 /* Place the container to the right */
-.right {
+.timeline .right {
   left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
-.left::before {
+.timeline .left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -94,7 +94,7 @@ body {
 }
 
 /* Add arrows to the right container (pointing left) */
-.right::before {
+.timeline .right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -108,12 +108,12 @@ body {
 }
 
 /* Fix the circle for containers on the right side */
-.right::after {
+.timeline .right::after {
   left: -16px;
 }
 
 /* The actual content */
-.content {
+.timeline .content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -128,14 +128,14 @@ body {
   }
 
 /* Full-width containers */
-  .container {
+  .timeline .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+   .timeline .container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -143,12 +143,12 @@ body {
   }
 
 /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
+  .timeline .left::after, .right::after {
     left: 15px;
   }
 
 /* Make all right containers behave like the left ones */
-  .right {
+  .timeline .right {
     left: 0%;
   }
 }
