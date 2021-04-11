@@ -24,7 +24,14 @@ div.vertical-line{
 </style>
 </head>
 
-<div class="vertical-line" style="height: 45px;"></div>
+<div class="vertical-line" style="height: 45px;">
+2020 - LMS  
+2019 - KSKS
+
+</div>
+
+
+
 ## Contact details
 
 Email: sb235@st-andrews.ac.uk
