@@ -13,9 +13,8 @@ I am a research fellow at the University of St Andrews, funded by an early caree
 
 <style>
 .vl {
-  border-left: 6px solid green;
-  height: 500px;
-  position: absolute;
+  border-left: 6px grey;
+  height: 150px;
   left: 50%;
   margin-left: -3px;
   top: 0;
