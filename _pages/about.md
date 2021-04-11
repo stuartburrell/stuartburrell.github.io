@@ -11,17 +11,8 @@ redirect_from:
 
 I am a research fellow at the University of St Andrews, funded by an early career fellowship from the [London Mathematical Society](https://www.lms.ac.uk/) and the [Heilbronn Institute for Mathematical Research](https://heilbronn.ac.uk/).    
 
-<style>
-.vl {
-  border-left: 6px black;
-  height: 600px;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
-}
-</style>
-
-<div class="vl"></div>
+2020 <hr width="1" size="500"> : djdsds
+2019 <hr width="1" size="500"> : djsfd
 
 ## Contact details
 
