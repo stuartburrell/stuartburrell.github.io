@@ -16,10 +16,12 @@ Before that, I completed a PhD in mathematics with the [analysis research group]
 
 I enjoy teaching and was recently made an [Associate Fellow of the Higher Education Academy (AFHEA)](https://stuartburrell.github.io/files/cert-afhea.pdf). In 2020, three students kindly nominated me for the 'Best Postgraduate Tutor' university teaching award.  
 
+### Timeline
+
 2020 --- 2021  | London Mathematical Society Early Career Research Fellow, University of St Andrews  
 2016 --- 2020  | PhD, Mathematics, University of St Andrews  
 2012 --- 2016  | MMath, Mathematics, University of St Andrews  
 
-## Contact details
+### Contact details
 
 Email: sb235@st-andrews.ac.uk
