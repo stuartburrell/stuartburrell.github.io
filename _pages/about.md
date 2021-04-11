@@ -24,12 +24,10 @@ div.vertical-line{
 </style>
 </head>
 
-<div class="vertical-line" style="height: 45px;">
-2020 - LMS  
-2019 - KSKS
+<div class="vertical-line" style="height: 45px;"></div>  
 
-</div>  
-
+LMS 2020  
+GTM 2019
 
 <div>
 ## Contact details
