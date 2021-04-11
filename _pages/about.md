@@ -29,8 +29,7 @@ div.vertical-line{
 LMS 2020  
 GTM 2019
 
-<div>
+
 ## Contact details
 
 Email: sb235@st-andrews.ac.uk
-</div>
