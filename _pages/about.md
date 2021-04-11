@@ -9,7 +9,7 @@ redirect_from:
   -
 ---
 
-I am a research fellow at the University of St Andrews, funded by an early career fellowship from the [London Mathematical Society](https://www.lms.ac.uk/) and the [Heilbronn Institute for Mathematical Research](https://heilbronn.ac.uk/). Before that, I completed a PhD in mathematics with the [analysis research group](http://www.mcs.st-andrews.ac.uk/pg/pure/Analysis/) at the University of St Andrews. This was funded through a scholarship from the [Carnegie Trust](https://www.carnegie-trust.org/) and supervised by [Dr Jonathan Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/) and [Professor Kenneth Falconer](http://www.mcs.st-and.ac.uk/~kenneth/).   
+I am a research fellow at the University of St Andrews, funded by an early career fellowship from the [London Mathematical Society](https://www.lms.ac.uk/) and the [Heilbronn Institute for Mathematical Research](https://heilbronn.ac.uk/).    
 
 |2020 - 2021|London Mathematical<br/>Society Early Career<br/>Research Fellow|  
 |2016 - 2020|PhD, Mathematics<br/>University of St Andrews|  
