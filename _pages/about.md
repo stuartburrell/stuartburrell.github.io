@@ -24,7 +24,9 @@ div.vertical-line{
 </style>
 </head>
 
-2020 <div class="vertical-line" style="height: 45px;"></div> LMS
+2020
+<div class="vertical-line" style="height: 45px;"></div>
+LMS
 2019 <div class="vertical-line" style="height: 45px;"></div> GTM
 
 ## Contact details
