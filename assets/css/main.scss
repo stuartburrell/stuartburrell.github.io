@@ -10,17 +10,6 @@
  *
 */
 
-$timeline-background-color: white;
-$timeline-rule-color: white;
-$timeline-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-
-$timeline-event-background-color: white;
-$timeline-event-border-color: orange;
-$timeline-big-event-background-color: white;
-
-$timeline-entry-title-color: black;
-$timeline-entry-body-color: black;
-
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
@@ -46,4 +35,3 @@ $timeline-entry-body-color: black;
 
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
-@import "timeline-md";

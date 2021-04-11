@@ -24,11 +24,6 @@ I am a research fellow at the University of St Andrews, funded by an early caree
 
 <div class="vl"></div>
 
-|2020 - 2021|London Mathematical<br/>Society Early Career<br/>Research Fellow|  
-|2016 - 2020|PhD, Mathematics<br/>University of St Andrews|  
-|2012 - 2016|MMath, Mathematics<br/>Univeristy of St Andrews|  
-{: .timeline-md}
-
 ## Contact details
 
 Email: sb235@st-andrews.ac.uk
