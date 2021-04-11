@@ -28,10 +28,11 @@ div.vertical-line{
 2020 - LMS  
 2019 - KSKS
 
-</div>
+</div>  
 
 
-
+<div>
 ## Contact details
 
 Email: sb235@st-andrews.ac.uk
+</div>
