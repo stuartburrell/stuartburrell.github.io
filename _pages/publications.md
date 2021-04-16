@@ -32,7 +32,7 @@ with [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).
 {: reversed="reversed"}
 ### PhD Thesis
 
-[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/thesis.pdf)  
+[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/thesisnosig.pdf)  
 
 ### Master's Theses
 
