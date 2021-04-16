@@ -30,6 +30,10 @@ with [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).
 1. On the dimension and measure of inhomogeneous attractors, [arXiv](https://arxiv.org/abs/1805.00887)  
 **Real Analysis Exchange**, Vol. 44, No. 1 (2019), pp. 199-216.
 {: reversed="reversed"}
+### PhD Thesis
+
+[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/thesis.pdf)  
+
 ### Master's Theses
 
 [The order problem for natural and tropical matrix semigroups](https://stuartburrell.github.io/files/gapthesis.pdf)  
