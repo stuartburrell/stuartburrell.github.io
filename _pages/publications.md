@@ -21,11 +21,11 @@ with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](
 
 3. Digit expansions of numbers in different bases, [arXiv](https://arxiv.org/abs/1905.00832)  
 with [H. Yu](https://www.dpmms.cam.ac.uk/~hy351/).  
-**Journal of Number Theory** (to appear).  
+**Journal of Number Theory**, Vol. 226 (2021), pp. 284-306.  
 
 2. The dimensions of inhomogeneous self-affine sets, [arXiv](https://arxiv.org/abs/1807.08694)  
 with [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
-**Annales Academiae Scientiarum Fennicae Mathematica**, Vol. 45, (2020), pp. 313-324.    
+**Annales Acad. Sci. Fenn. Math.**, Vol. 45, (2020), pp. 313-324.    
 
 1. On the dimension and measure of inhomogeneous attractors, [arXiv](https://arxiv.org/abs/1805.00887)  
 **Real Analysis Exchange**, Vol. 44, No. 1 (2019), pp. 199-216.
