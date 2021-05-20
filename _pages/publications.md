@@ -17,7 +17,7 @@ with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](
 
 4. Projection theorems for intermediate dimensions, [arXiv](https://arxiv.org/abs/1907.07632)  
 with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
-**Journal of Fractal Geometry** (to appear).  
+**Journal of Fractal Geometry**, Vol. 8, No. 2 (2021), pp. 95-116.  
 
 3. Digit expansions of numbers in different bases, [arXiv](https://arxiv.org/abs/1905.00832)  
 with [H. Yu](https://www.dpmms.cam.ac.uk/~hy351/).  
