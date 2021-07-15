@@ -7,6 +7,9 @@ author_profile: true
 <!--[See a map of all the places I've given a talk!](https://stuartburrell.github.io/talkmap.html)-->
 
 ## International conferences and meetings
+Local structure of elliptical polynomial spirals  
+*British Early Career Mathematicians’ Colloquium, July 2021.*  
+
 Dimension and deformation of elliptical polynomial spirals  
 *Junior Ergodic Theory Meeting (JETS), November 2020.*  
 
