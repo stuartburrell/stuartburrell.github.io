@@ -6,9 +6,7 @@ author_profile: true
 
 <!--[See a map of all the places I've given a talk!](https://stuartburrell.github.io/talkmap.html)-->
 
-## International conferences and meetings
-Local structure of elliptical polynomial spirals  
-*British Early Career Mathematicians’ Colloquium, July 2021.*  
+## International conferences and meetings   
 
 Dimension and deformation of elliptical polynomial spirals  
 *Junior Ergodic Theory Meeting (JETS), November 2020.*  
@@ -36,6 +34,9 @@ Trace contrast methods in acoustic space
 *African Institute for Mathematical Sciences, South Africa, January 2017.*  
 
 ## National conferences and meetings
+Local structure of elliptical polynomial spirals  
+*British Early Career Mathematicians’ Colloquium, July 2021.*  
+
 Inhomogeneous attractors: an introduction and recent developments  
 *Edinburgh Mathematical Society PG Student Meeting, The Burn, Glen Esk, May 2019.*  
 
