@@ -13,7 +13,7 @@ with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](
 *submitted.*  
 
 5. Dimensions of fractional Brownian images, [arXiv](https://arxiv.org/abs/2002.03659)    
-*submitted.*
+**Journal of Theoretical Probability**, (to appear). 
 
 4. Projection theorems for intermediate dimensions, [arXiv](https://arxiv.org/abs/1907.07632)  
 with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
