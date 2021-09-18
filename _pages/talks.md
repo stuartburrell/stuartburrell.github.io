@@ -8,6 +8,9 @@ author_profile: true
 
 ## International conferences and meetings   
 
+The elliptical spiral mapping problem
+*Dynamic Days Europe, Nice, France, August 2021.*  
+
 Dimension and deformation of elliptical polynomial spirals  
 *Junior Ergodic Theory Meeting (JETS), November 2020.*  
 
