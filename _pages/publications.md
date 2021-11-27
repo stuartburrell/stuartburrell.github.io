@@ -13,7 +13,7 @@ with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](
 *submitted.*  
 
 5. Dimensions of fractional Brownian images, [arXiv](https://arxiv.org/abs/2002.03659)    
-**Journal of Theoretical Probability**, (to appear). 
+**Journal of Theoretical Probability**, (to appear).
 
 4. Projection theorems for intermediate dimensions, [arXiv](https://arxiv.org/abs/1907.07632)  
 with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
@@ -21,7 +21,7 @@ with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](
 
 3. Digit expansions of numbers in different bases, [arXiv](https://arxiv.org/abs/1905.00832)  
 with [H. Yu](https://www.dpmms.cam.ac.uk/~hy351/).  
-**Journal of Number Theory**, Vol. 226 (2021), pp. 284-306.  
+**Journal of Number Theory**, Vol. 226, (2021), pp. 284-306.  
 
 2. The dimensions of inhomogeneous self-affine sets, [arXiv](https://arxiv.org/abs/1807.08694)  
 with [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
