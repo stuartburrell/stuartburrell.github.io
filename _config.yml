@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "Stuart A. Burrell"
 title_separator          : "-"
 name                     : &name "Stuart A. Burrell"
-description              : &description "PhD Student at the University of St Andrews"
+description              : &description "Mathematician"
 url                      : https://stuartburrell.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "stuartburrell.github.io"
@@ -81,7 +81,7 @@ author:
   name             : ""
   avatar           : "profile.jpg"
   bio              : ""
-  employer         : "Universiy of St Andrews"
+  employer         : "Universiy of Cambridge"
   location         :
   googlescholar    : "https://scholar.google.co.uk/citations?user=DJ74QYQAAAAJ&hl=en"
   email            :
