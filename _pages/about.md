@@ -24,4 +24,4 @@ I enjoy teaching and received [Associate Fellowship of the Higher Education Acad
 
 ### Contact details
 
-Email: ozykek05c@mozmail.com<sup>relay email, changed periodically</sup>
+Email: ozykek05c@mozmail.com (relay email, changed periodically)
