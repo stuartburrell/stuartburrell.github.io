@@ -10,7 +10,7 @@ Up to date versions of these articles are freely available on arXiv - see the li
 
 6. The fractal structure of elliptical polynomial spirals, [arXiv](https://arxiv.org/abs/2008.08539)  
 with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
-*submitted.*  
+**Monatsh. Math.**, (to appear).   
 
 5. Dimensions of fractional Brownian images, [arXiv](https://arxiv.org/abs/2002.03659)    
 **Journal of Theoretical Probability**, (to appear).
