@@ -18,10 +18,11 @@ I enjoy teaching and received [Associate Fellowship of the Higher Education Acad
 
 ### Timeline
 
+2021 --- 2022  | MPhil, Machine Learning and Machine Intelligence, University of Cambridge  
 2020 --- 2021  | London Mathematical Society Early Career Research Fellow, University of St Andrews  
 2016 --- 2020  | PhD, Mathematics, University of St Andrews  
 2012 --- 2016  | MMath, Mathematics, University of St Andrews  
 
 ### Contact details
 
-Email: ozykek05c@mozmail.com (relay email, changed periodically)
+Email: sab256@cam.ac.uk
