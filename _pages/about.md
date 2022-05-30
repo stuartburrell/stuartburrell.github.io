@@ -14,7 +14,7 @@ I was a research fellow at the University of St Andrews, funded by an early care
 Before that, I completed a PhD in mathematics with the [analysis research group](http://www.mcs.st-andrews.ac.uk/pg/pure/Analysis/) at the University of St Andrews. This was funded through a scholarship from the [Carnegie Trust](https://www.carnegie-trust.org/) and supervised by [Professor Jonathan Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/) and
 [Professor Kenneth Falconer](http://www.mcs.st-and.ac.uk/~kenneth/).  
 
-I enjoy teaching and received [Associate Fellowship of the Higher Education Academy (AFHEA)](https://stuartburrell.github.io/files/cert-afhea.pdf). In 2020, three students kindly nominated me for the 'Best Postgraduate Tutor' university teaching award.  
+I enjoy teaching and received [Associate Fellowship of the Higher Education Academy (AFHEA)](https://stuartburrell.github.io/files/cert-afhea.pdf). In 2020, three students kindly nominated me for the 'Best Postgraduate Tutor' university teaching award. I have also designed courses, undergone training and worked with The Brilliant Club and the First Chances Scheme to promote wider access to higher education in the UK.
 
 ### Timeline
 
