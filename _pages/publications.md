@@ -30,6 +30,15 @@ with [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).
 1. On the dimension and measure of inhomogeneous attractors, [arXiv](https://arxiv.org/abs/1805.00887)  
 **Real Analysis Exchange**, Vol. 44, No. 1 (2019), pp. 199-216.
 {: reversed="reversed"}
+
+### Open-source Software
+
+1. [GAP Semigroups package](http://www.gap-system.org/Packages/semigroups.html)  
+Implemented methods to decide the order and torsion problems of natural and tropical matrix semigroups.
+
+2. [GAP Digraphs package](http://www.gap-system.org/Packages/digraphs.html)  
+Implementated methods for computing simple circuits.
+
 ### PhD Thesis
 
 [Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/phdthesis.pdf)  
