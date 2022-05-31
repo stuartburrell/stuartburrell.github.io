@@ -4,9 +4,9 @@ permalink: /research/
 author_profile: true
 ---
 
-Up to date versions of these articles are freely available on arXiv - see the links below.
+All of my work is freely available on arXiv - see the links below.
 
-### Articles
+## Articles
 
 The fractal structure of elliptical polynomial spirals, [arXiv](https://arxiv.org/abs/2008.08539)  
 with [K. J. Falconer](http://www.mcs.st-and.ac.uk/~kenneth/) and [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).  
@@ -30,7 +30,7 @@ with [J. M. Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/).
 On the dimension and measure of inhomogeneous attractors, [arXiv](https://arxiv.org/abs/1805.00887)  
 **Real Analysis Exchange**, Vol. 44, No. 1 (2019), pp. 199-216.
 
-### Open-source software
+## Open-source software
 
 [GAP Semigroups package](http://www.gap-system.org/Packages/semigroups.html)  
 Implemented methods to decide the order and torsion problems of natural and tropical matrix semigroups.
@@ -38,11 +38,9 @@ Implemented methods to decide the order and torsion problems of natural and trop
 [GAP Digraphs package](http://www.gap-system.org/Packages/digraphs.html)  
 Implemented methods for computing simple circuits.
 
-### PhD thesis
+## Theses
 
 [Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/phdthesis.pdf)  
-
-### Master's theses
 
 [The order problem for natural and tropical matrix semigroups](https://stuartburrell.github.io/files/gapthesis.pdf)  
 
