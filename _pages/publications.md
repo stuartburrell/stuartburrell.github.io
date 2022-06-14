@@ -40,8 +40,8 @@ Contributed methods for computing simple circuits.
 
 ## Theses
 
-[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/phdthesis.pdf), PhD, 2020.  
+[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/phdthesis.pdf), University of St Andrews, PhD, 2020.  
 
-[The order problem for natural and tropical matrix semigroups](https://stuartburrell.github.io/files/gapthesis.pdf), MMath, 2016.
+[The order problem for natural and tropical matrix semigroups](https://stuartburrell.github.io/files/gapthesis.pdf), University of St Andrews, MMath, 2016.
 
-[Sequential Monte Carlo in population dynamics](https://stuartburrell.github.io/files/smcthesis.pdf), MMath, 2016.
+[Sequential Monte Carlo in population dynamics](https://stuartburrell.github.io/files/smcthesis.pdf), University of St Andrews, MMath, 2016.
