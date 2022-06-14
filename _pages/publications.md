@@ -33,15 +33,15 @@ On the dimension and measure of inhomogeneous attractors, [arXiv](https://arxiv.
 ## Open-source software
 
 [GAP Semigroups package](http://www.gap-system.org/Packages/semigroups.html)  
-Implemented methods to decide the order and torsion problems of natural and tropical matrix semigroups.
+Contributed methods to decide the order and torsion problems of natural and tropical matrix semigroups.
 
 [GAP Digraphs package](http://www.gap-system.org/Packages/digraphs.html)  
-Implemented methods for computing simple circuits.
+Contributed methods for computing simple circuits.
 
 ## Theses
 
-[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/phdthesis.pdf)  
+[Coincidence and disparity of fractal dimensions](https://stuartburrell.github.io/files/phdthesis.pdf), PhD, 2020.  
 
-[The order problem for natural and tropical matrix semigroups](https://stuartburrell.github.io/files/gapthesis.pdf)  
+[The order problem for natural and tropical matrix semigroups](https://stuartburrell.github.io/files/gapthesis.pdf), MMath, 2016.
 
-[Sequential Monte Carlo in population dynamics](https://stuartburrell.github.io/files/smcthesis.pdf)  
+[Sequential Monte Carlo in population dynamics](https://stuartburrell.github.io/files/smcthesis.pdf), MMath, 2016.
