@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
   -
 ---
-I will be joining the [Darktrace Cyber AI Research Centre](https://darktrace.com/research) in October 2022. My primary research interests are in unsupervised and self-supervised learning.
+I will be joining the [Darktrace Cyber AI Research Centre](https://darktrace.com/research) in October 2022. Previously, I was a research fellow at the University of St Andrews, funded by an early career fellowship from the [London Mathematical Society](https://www.lms.ac.uk/) and the [Heilbronn Institute for Mathematical Research](https://heilbronn.ac.uk/).
 
-Previously, I was a research fellow at the University of St Andrews, funded by an early career fellowship from the [London Mathematical Society](https://www.lms.ac.uk/) and the [Heilbronn Institute for Mathematical Research](https://heilbronn.ac.uk/). I completed a PhD in Mathematics funded by the [Carnegie Trust](https://www.carnegie-trust.org/) with [Prof. Jonathan Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/) and [Prof. Kenneth Falconer](http://www.mcs.st-and.ac.uk/~kenneth/). I enjoy teaching and received [Associate Fellowship of the Higher Education Academy (AFHEA)](https://stuartburrell.github.io/files/cert-afhea.pdf). In 2020, three students kindly nominated me for the 'Best Postgraduate Tutor' university teaching award. I have also designed courses for and worked with [The Brilliant Club](https://thebrilliantclub.org/) and [First Chances Fife](https://www.firstchancesfife.ac.uk/) to promote wider access to higher education in the UK.
+I completed a PhD in Mathematics funded by the [Carnegie Trust](https://www.carnegie-trust.org/) with [Prof. Jonathan Fraser](http://www.mcs.st-andrews.ac.uk/~jmf32/) and [Prof. Kenneth Falconer](http://www.mcs.st-and.ac.uk/~kenneth/). I enjoy teaching and received [Associate Fellowship of the Higher Education Academy (AFHEA)](https://stuartburrell.github.io/files/cert-afhea.pdf). In 2020, three students kindly nominated me for the 'Best Postgraduate Tutor' university teaching award. I have also designed courses for and worked with [The Brilliant Club](https://thebrilliantclub.org/) and [First Chances Fife](https://www.firstchancesfife.ac.uk/) to promote wider access to higher education in the UK.
 
 ### Timeline
 
