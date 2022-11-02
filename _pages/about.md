@@ -14,6 +14,7 @@ I completed a PhD in Mathematics funded by the [Carnegie Trust](https://www.carn
 
 ### Timeline
 
+|:----------:|-------------|  
 2022- | Research Scientist, Featurespace, Cambridge  
 2022 | Mathematician, Darktrace Cyber AI Research Center, Cambridge  
 21-22  | MPhil, Machine Learning and Machine Intelligence, University of Cambridge  
