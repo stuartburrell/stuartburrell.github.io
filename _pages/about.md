@@ -14,12 +14,12 @@ I completed a PhD in Mathematics funded by the [Carnegie Trust](https://www.carn
 
 ### Timeline
 
-2022 ---  Present | Featurespace, Cambridge  
-2022 | Darktrace Cyber AI Research Center, Cambridge  
-2021 --- 2022  | MPhil, Machine Learning and Machine Intelligence, University of Cambridge  
-2020 --- 2021  | London Mathematical Society Early Career Research Fellow, University of St Andrews  
-2016 --- 2020  | PhD, Mathematics, University of St Andrews  
-2012 --- 2016  | MMath, Mathematics, University of St Andrews  
+2022- | Research Scientist, Featurespace, Cambridge  
+2022 | Mathematician, Darktrace Cyber AI Research Center, Cambridge  
+21-22  | MPhil, Machine Learning and Machine Intelligence, University of Cambridge  
+20-21  | London Mathematical Society Early Career Research Fellow, University of St Andrews  
+16-20  | PhD, Mathematics, University of St Andrews  
+12-16  | MMath, Mathematics, University of St Andrews  
 
 ### Contact details
 
