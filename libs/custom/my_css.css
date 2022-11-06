@@ -29,6 +29,7 @@ h4 {
   margin-top: 5px; }
 .main-description .ai {
   font-size: 22px;
+  display: inline !important;
   margin-top: 5px; }
 .paper {
   margin-bottom: 20px }
