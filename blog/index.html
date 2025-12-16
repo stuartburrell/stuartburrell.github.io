@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         :root {
             --color-bg: #ffffff;
@@ -156,6 +157,7 @@
             text-decoration: none;
             color: inherit;
             display: block;
+            cursor: pointer;
         }
 
         .post-card:hover {
@@ -205,46 +207,135 @@
             line-height: 1.6;
         }
 
-        /* Featured Post */
-        .featured-post {
-            background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
-            border: 2px solid var(--color-border);
-            padding: 3rem;
+        /* Article View */
+        .article-view {
+            display: none;
+        }
+
+        .article-view.active {
+            display: block;
+        }
+
+        .article-content {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .article-header {
             margin-bottom: 3rem;
         }
 
-        .featured-post .post-meta {
-            margin-bottom: 1.5rem;
-        }
-
-        .featured-post h2 {
-            font-size: 2.25rem;
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
             margin-bottom: 1rem;
         }
 
-        .featured-post p {
-            font-size: 1.125rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .read-more {
+        .back-link {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             color: var(--color-accent);
-            font-weight: 500;
-            font-size: 0.9375rem;
             text-decoration: none;
+            font-size: 0.9375rem;
+            margin-bottom: 2rem;
             transition: gap 0.2s;
         }
 
-        .read-more:hover {
+        .back-link:hover {
             gap: 0.75rem;
         }
 
-        .read-more svg {
-            width: 16px;
-            height: 16px;
+        /* Markdown Styles */
+        .article-content h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+            margin: 2rem 0 1rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            margin: 2.5rem 0 1rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 2rem 0 0.75rem;
+        }
+
+        .article-content p {
+            margin: 1rem 0;
+            line-height: 1.7;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .article-content li {
+            margin: 0.5rem 0;
+            line-height: 1.7;
+        }
+
+        .article-content pre {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--color-border);
+        }
+
+        .article-content code {
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            background: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        .article-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid var(--color-accent);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--color-text-secondary);
+            font-style: italic;
+        }
+
+        .article-content a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content hr {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 3rem 0;
+        }
+
+        .article-content strong {
+            font-weight: 600;
         }
 
         /* Footer */
@@ -317,16 +408,20 @@
                 gap: 2rem;
             }
 
-            .featured-post {
-                padding: 2rem;
-            }
-
-            .featured-post h2 {
-                font-size: 1.75rem;
-            }
-
             .post-card {
                 padding: 1.5rem;
+            }
+
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-content h1 {
+                font-size: 2rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
             }
         }
 
@@ -349,111 +444,47 @@
         .post-card:nth-child(1) { animation-delay: 0.1s; }
         .post-card:nth-child(2) { animation-delay: 0.2s; }
         .post-card:nth-child(3) { animation-delay: 0.3s; }
-        .post-card:nth-child(4) { animation-delay: 0.4s; }
-        .post-card:nth-child(5) { animation-delay: 0.5s; }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">Developer Blog</a>
+            <a href="#" class="logo" onclick="showBlogList(); return false;">Developer Blog</a>
             <ul class="nav-links">
-                <li><a href="#all">All Posts</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
-                <li><a href="#insights">Insights</a></li>
+                <li><a href="#" onclick="showBlogList(); return false;">All Posts</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <h1>Insights for developers</h1>
-        <p>Technical deep-dives, product updates, and developer insights from the team.</p>
+    <!-- Blog List View -->
+    <div id="blog-list" class="blog-list-view">
+        <div class="hero">
+            <h1>Insights for developers</h1>
+            <p>Technical deep-dives, product updates, and developer insights from the team.</p>
+        </div>
+
+        <main>
+            <div class="posts-grid" id="posts-grid">
+                <!-- Posts will be loaded here dynamically -->
+            </div>
+        </main>
     </div>
 
-    <main>
-        <section class="filter-section">
-            <div class="filter-tags">
-                <a href="#" class="tag active">All posts</a>
-                <a href="#" class="tag">API</a>
-                <a href="#" class="tag">AI/ML</a>
-                <a href="#" class="tag">Engineering</a>
-                <a href="#" class="tag">Product</a>
-                <a href="#" class="tag">Research</a>
-            </div>
-        </section>
-
-        <article class="featured-post post-card">
-            <div class="post-meta">
-                <span class="post-category">AI/ML</span>
-                <span class="post-date">Dec 15</span>
-            </div>
-            <h2>Building the next generation of AI systems</h2>
-            <p>How we're approaching large-scale model training with a focus on safety, scalability, and real-world applications.</p>
-            <a href="#" class="read-more">
-                Read article
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+    <!-- Article View -->
+    <div id="article-view" class="article-view">
+        <main>
+            <a href="#" class="back-link" onclick="showBlogList(); return false;">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                 </svg>
+                Back to all posts
             </a>
-        </article>
-
-        <div class="posts-grid">
-            <article class="post-card">
-                <div class="post-meta">
-                    <span class="post-category">Engineering</span>
-                    <span class="post-date">Dec 12</span>
-                </div>
-                <h2>Optimizing API response times at scale</h2>
-                <p>Lessons learned from handling millions of requests per day and the architectural decisions that made it possible.</p>
+            <article class="article-content" id="article-content">
+                <!-- Article content will be loaded here -->
             </article>
-
-            <article class="post-card">
-                <div class="post-meta">
-                    <span class="post-category">Product</span>
-                    <span class="post-date">Dec 10</span>
-                </div>
-                <h2>Introducing our new developer dashboard</h2>
-                <p>A complete redesign of our developer experience with better monitoring, analytics, and debugging tools.</p>
-            </article>
-
-            <article class="post-card">
-                <div class="post-meta">
-                    <span class="post-category">Research</span>
-                    <span class="post-date">Dec 8</span>
-                </div>
-                <h2>Understanding transformer architectures</h2>
-                <p>A technical deep-dive into the architecture that powers modern language models and how it processes information.</p>
-            </article>
-
-            <article class="post-card">
-                <div class="post-meta">
-                    <span class="post-category">API</span>
-                    <span class="post-date">Dec 5</span>
-                </div>
-                <h2>Rate limiting strategies for high-traffic APIs</h2>
-                <p>How to implement fair and effective rate limiting while maintaining excellent user experience.</p>
-            </article>
-
-            <article class="post-card">
-                <div class="post-meta">
-                    <span class="post-category">Engineering</span>
-                    <span class="post-date">Dec 3</span>
-                </div>
-                <h2>Building resilient distributed systems</h2>
-                <p>Patterns and practices for creating services that handle failures gracefully and maintain uptime.</p>
-            </article>
-
-            <article class="post-card">
-                <div class="post-meta">
-                    <span class="post-category">AI/ML</span>
-                    <span class="post-date">Nov 30</span>
-                </div>
-                <h2>Fine-tuning models for specialized tasks</h2>
-                <p>A practical guide to customizing language models for domain-specific applications with limited data.</p>
-            </article>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -488,27 +519,115 @@
     </footer>
 
     <script>
-        // Tag filtering
-        const tags = document.querySelectorAll('.tag');
-        tags.forEach(tag => {
-            tag.addEventListener('click', (e) => {
-                e.preventDefault();
-                tags.forEach(t => t.classList.remove('active'));
-                tag.classList.add('active');
+        // Blog posts configuration
+        const posts = [
+            {
+                slug: 'optimizing-api-response-times',
+                title: 'Optimizing API Response Times at Scale',
+                description: 'Lessons learned from handling millions of requests per day and the architectural decisions that made it possible.',
+                category: 'Engineering',
+                date: 'Dec 12',
+                file: 'posts/optimizing-api-response-times.md'
+            },
+            {
+                slug: 'understanding-transformer-architectures',
+                title: 'Understanding Transformer Architectures',
+                description: 'A technical deep-dive into the architecture that powers modern language models and how it processes information.',
+                category: 'Research',
+                date: 'Dec 8',
+                file: 'posts/understanding-transformer-architectures.md'
+            },
+            {
+                slug: 'building-resilient-distributed-systems',
+                title: 'Building Resilient Distributed Systems',
+                description: 'Patterns and practices for creating services that handle failures gracefully and maintain uptime.',
+                category: 'Engineering',
+                date: 'Dec 3',
+                file: 'posts/building-resilient-distributed-systems.md'
+            }
+        ];
+
+        // Render blog list
+        function renderBlogList() {
+            const grid = document.getElementById('posts-grid');
+            grid.innerHTML = '';
+
+            posts.forEach(post => {
+                const card = document.createElement('article');
+                card.className = 'post-card';
+                card.onclick = () => loadArticle(post.slug);
+                
+                card.innerHTML = `
+                    <div class="post-meta">
+                        <span class="post-category">${post.category}</span>
+                        <span class="post-date">${post.date}</span>
+                    </div>
+                    <h2>${post.title}</h2>
+                    <p>${post.description}</p>
+                `;
+                
+                grid.appendChild(card);
             });
+        }
+
+        // Load and render article
+        async function loadArticle(slug) {
+            const post = posts.find(p => p.slug === slug);
+            if (!post) return;
+
+            try {
+                const response = await fetch(post.file);
+                const markdown = await response.text();
+                
+                // Remove frontmatter (YAML between ---)
+                const content = markdown.replace(/^---[\s\S]*?---\n/, '');
+                
+                // Convert markdown to HTML
+                const html = marked.parse(content);
+                
+                document.getElementById('article-content').innerHTML = html;
+                
+                // Show article view, hide blog list
+                document.getElementById('blog-list').style.display = 'none';
+                document.getElementById('article-view').classList.add('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Update URL without page reload
+                window.history.pushState({ slug }, '', `#${slug}`);
+                
+            } catch (error) {
+                console.error('Error loading article:', error);
+                alert('Error loading article. Please try again.');
+            }
+        }
+
+        // Show blog list
+        function showBlogList() {
+            document.getElementById('blog-list').style.display = 'block';
+            document.getElementById('article-view').classList.remove('active');
+            window.history.pushState({}, '', '#');
+            window.scrollTo(0, 0);
+        }
+
+        // Handle browser back/forward
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.slug) {
+                loadArticle(event.state.slug);
+            } else {
+                showBlogList();
+            }
         });
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && document.querySelector(href)) {
-                    e.preventDefault();
-                    document.querySelector(href).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
+        // Check URL on load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderBlogList();
+            
+            const hash = window.location.hash.slice(1);
+            if (hash && posts.find(p => p.slug === hash)) {
+                loadArticle(hash);
+            }
         });
     </script>
 </body>
