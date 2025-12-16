@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-secondary: #6b6b6b;
+            --color-border: #e5e5e5;
+            --color-accent: #10a37f;
+            --color-accent-hover: #0d8968;
+            --color-card-bg: #fafafa;
+            --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --max-width: 1200px;
+            --content-width: 720px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            background: var(--color-bg);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-text);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 4rem 2rem 3rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 2rem 6rem;
+        }
+
+        /* Filter Tags */
+        .filter-section {
+            margin-bottom: 3rem;
+        }
+
+        .filter-tags {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 0.5rem 1rem;
+            border-radius: 24px;
+            border: 1px solid var(--color-border);
+            background: var(--color-bg);
+            color: var(--color-text-secondary);
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .tag:hover,
+        .tag.active {
+            background: var(--color-text);
+            color: var(--color-bg);
+            border-color: var(--color-text);
+        }
+
+        /* Blog Posts Grid */
+        .posts-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .post-card {
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+            background: var(--color-bg);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .post-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            border-color: var(--color-accent);
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+        }
+
+        .post-category {
+            color: var(--color-accent);
+            font-weight: 500;
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+        }
+
+        .post-date {
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .post-date::before {
+            content: '·';
+            position: absolute;
+            left: 0.35rem;
+        }
+
+        .post-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .post-card p {
+            color: var(--color-text-secondary);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        /* Featured Post */
+        .featured-post {
+            background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+            border: 2px solid var(--color-border);
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .featured-post .post-meta {
+            margin-bottom: 1.5rem;
+        }
+
+        .featured-post h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .featured-post p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-accent);
+            font-weight: 500;
+            font-size: 0.9375rem;
+            text-decoration: none;
+            transition: gap 0.2s;
+        }
+
+        .read-more:hover {
+            gap: 0.75rem;
+        }
+
+        .read-more svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--color-border);
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-text);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--color-border);
+            padding: 1.5rem 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            color: var(--color-text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .featured-post {
+                padding: 2rem;
+            }
+
+            .featured-post h2 {
+                font-size: 1.75rem;
+            }
+
+            .post-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Loading Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .post-card {
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .post-card:nth-child(1) { animation-delay: 0.1s; }
+        .post-card:nth-child(2) { animation-delay: 0.2s; }
+        .post-card:nth-child(3) { animation-delay: 0.3s; }
+        .post-card:nth-child(4) { animation-delay: 0.4s; }
+        .post-card:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Developer Blog</a>
+            <ul class="nav-links">
+                <li><a href="#all">All Posts</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Insights for developers</h1>
+        <p>Technical deep-dives, product updates, and developer insights from the team.</p>
+    </div>
+
+    <main>
+        <section class="filter-section">
+            <div class="filter-tags">
+                <a href="#" class="tag active">All posts</a>
+                <a href="#" class="tag">API</a>
+                <a href="#" class="tag">AI/ML</a>
+                <a href="#" class="tag">Engineering</a>
+                <a href="#" class="tag">Product</a>
+                <a href="#" class="tag">Research</a>
+            </div>
+        </section>
+
+        <article class="featured-post post-card">
+            <div class="post-meta">
+                <span class="post-category">AI/ML</span>
+                <span class="post-date">Dec 15</span>
+            </div>
+            <h2>Building the next generation of AI systems</h2>
+            <p>How we're approaching large-scale model training with a focus on safety, scalability, and real-world applications.</p>
+            <a href="#" class="read-more">
+                Read article
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </article>
+
+        <div class="posts-grid">
+            <article class="post-card">
+                <div class="post-meta">
+                    <span class="post-category">Engineering</span>
+                    <span class="post-date">Dec 12</span>
+                </div>
+                <h2>Optimizing API response times at scale</h2>
+                <p>Lessons learned from handling millions of requests per day and the architectural decisions that made it possible.</p>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">
+                    <span class="post-category">Product</span>
+                    <span class="post-date">Dec 10</span>
+                </div>
+                <h2>Introducing our new developer dashboard</h2>
+                <p>A complete redesign of our developer experience with better monitoring, analytics, and debugging tools.</p>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">
+                    <span class="post-category">Research</span>
+                    <span class="post-date">Dec 8</span>
+                </div>
+                <h2>Understanding transformer architectures</h2>
+                <p>A technical deep-dive into the architecture that powers modern language models and how it processes information.</p>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">
+                    <span class="post-category">API</span>
+                    <span class="post-date">Dec 5</span>
+                </div>
+                <h2>Rate limiting strategies for high-traffic APIs</h2>
+                <p>How to implement fair and effective rate limiting while maintaining excellent user experience.</p>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">
+                    <span class="post-category">Engineering</span>
+                    <span class="post-date">Dec 3</span>
+                </div>
+                <h2>Building resilient distributed systems</h2>
+                <p>Patterns and practices for creating services that handle failures gracefully and maintain uptime.</p>
+            </article>
+
+            <article class="post-card">
+                <div class="post-meta">
+                    <span class="post-category">AI/ML</span>
+                    <span class="post-date">Nov 30</span>
+                </div>
+                <h2>Fine-tuning models for specialized tasks</h2>
+                <p>A practical guide to customizing language models for domain-specific applications with limited data.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+                    Technical insights and updates for developers building with our platform.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#api">API Reference</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Your Company. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Tag filtering
+        const tags = document.querySelectorAll('.tag');
+        tags.forEach(tag => {
+            tag.addEventListener('click', (e) => {
+                e.preventDefault();
+                tags.forEach(t => t.classList.remove('active'));
+                tag.classList.add('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
